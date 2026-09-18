@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desterro-1876"
+version = "0.1.0"
+description = "Stitch the two library scans of the 1876 Planta topographica da Cidade do Desterro (Florianópolis) into one verified image"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Thiago F. Matos" }]
+dependencies = [
+  "opencv-python>=4.6",
+  "numpy>=1.23",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+desterro-stitch = "desterro.stitch:main"
+desterro-verify = "desterro.verify:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

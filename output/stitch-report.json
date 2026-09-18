@@ -1,0 +1,34 @@
+{
+  "upper": "data/raw/Mapa_Cartoes_CEMIf00016A_superior.tif",
+  "lower": "data/raw/Mapa_Cartoes_CEMIf00016B_inferior.tif",
+  "output": "output/stitched.jpg",
+  "output_size_px": [
+    4097,
+    4324
+  ],
+  "upper_origin_in_output_px": [
+    0,
+    0
+  ],
+  "transform": {
+    "matrix": [
+      [
+        0.9997672982170192,
+        0.009001165699172397,
+        564.758817309361
+      ],
+      [
+        -0.009001165699172397,
+        0.9997672982170192,
+        1773.7989448613682
+      ]
+    ],
+    "rotation_deg": -0.5158349068711148,
+    "scale": 0.9998078173169592,
+    "tx": 564.758817309361,
+    "ty": 1773.7989448613682,
+    "matches": 480,
+    "inliers": 297,
+    "rms_error_px": 6.292200161604367
+  }
+}
